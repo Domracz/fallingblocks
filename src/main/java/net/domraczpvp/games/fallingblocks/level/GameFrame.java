@@ -1,12 +1,11 @@
-package org.domraczpvp.games;
+package net.domraczpvp.games.fallingblocks.level;
 
 import javax.swing.*;
-import java.awt.Canvas;
 
 public class GameFrame extends JFrame {
-    public GameFrame() {
+    public GameFrame(int level) {
         // Set window properties such as size, title, and close operation
-        this.add(new GamePanel());
+        this.add(new GamePanel(level));
         this.setTitle("Falling Blocks");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
